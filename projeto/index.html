@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu hamburguer</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" text="text/css" href="/projeto/style.css" />
+  </head>
+  <body>
+    <!-- navegação -->
+    <nav class="navigation">
+      <div class="navigation-inner">
+        <img id="logo" />
+        <div class="main-navigation">
+          <ul class="main-navigation-ul">
+            <li><a href="">Link 01</a></li>
+            <li><a href="">Link 02</a></li>
+            <li><a href="">Link 03</a></li>
+            <li><a href="">Link 04</a></li>
+            <li><a href="">Link 05</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="btnBurguer" class="burguer-container" onclick="menuFn(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <script>
+        function menuFn(x) {
+          x.classList.toggle("change");
+        }
+      </script>
+    </nav>
+  </body>
+</html>
